@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm earning a Bachelor's in Software Engineering from BYU-Idaho. I enjoy Web Development, Raspberry Pis, Databases, Linux, and making things from scratch.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[quintonish@gmail.com](mailto:quintonish@gmail.com)
