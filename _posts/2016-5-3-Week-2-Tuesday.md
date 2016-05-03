@@ -9,3 +9,7 @@ Derrick and I received our first bit of work today. Logan gave us a pull request
 > JS developers seem to stand out from the crowd in the sense of typically not learning very much of the language. This is not a good thing, and it's not something we should continue to allow to be the norm.    
 
 My goal here is to become one who does understand.
+---
+layout: post
+title: Week 2 - Tuesday
+---
