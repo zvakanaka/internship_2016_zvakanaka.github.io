@@ -4,7 +4,6 @@ weekDay=$(gdate --date='today' +%A)
 fullDate=$(gdate --date='today' +%Y-%-m-%-d)
 outFile="_posts/$fullDate-Week-$weekNum-$weekDay.md"
 
-touch $outFile
 if [ ! -f $outFile ]; then
   echo -e "---\nlayout: post\ntitle: Week $weekNum - $weekDay\n---" >> $outFile
 else
