@@ -2,7 +2,7 @@
 layout: post
 title: Week 3 - Monday
 ---
-Monday was a better day. I am writing this Tuesday morning, because I forgot yesterday. I read the article, [9 Reasons JavaScript must die, and soon](http://patrickbay.ca/blog/?p=610), and I agree that they are all good points, but I do not side with them. I don't even know if the writer, Patrick Bay, agreed with his own points, but the exploration is what I like about the article.  
+I read the article, [9 Reasons JavaScript must die, and soon](http://patrickbay.ca/blog/?p=610), and I agree that they are all good points, but I do not side with them. I don't even know if the writer, Patrick Bay, agreed with his own points, but the exploration is what I liked about the article.  
 
 > Because JavaScript is an interpreted language, it’s heavy... it's an absolute battery killer.  
 
