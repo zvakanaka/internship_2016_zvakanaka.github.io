@@ -11,6 +11,6 @@ app.use(express.static(path.join(__dirname, 'public')));```
 
 Anything in the `public` directory is now public facing.
 
-I also decided to use mongodb by way of the mongoose plugin. This was done in Heroku by following a [scotch.io](https://scotch.io/tutorials/use-ejs-to-template-your-node-application) guide.  
+I also decided to use MongoDB by way of the [mongoose](https://github.com/mongolab/hello-mongoose) plugin. This was done in Heroku by following a [scotch.io](https://scotch.io/tutorials/use-ejs-to-template-your-node-application) and a [mongoose](https://github.com/mongolab/hello-mongoose) guide.  
 
 The port is not finished, but data is getting loaded onto a page.
