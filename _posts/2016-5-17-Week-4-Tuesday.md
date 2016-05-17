@@ -15,8 +15,8 @@ If this was to be taken on <strong>as a senior project, it would have a few weak
 After all that research, [this choosing language tags article](https://www.w3.org/International/questions/qa-choosing-language-tags) seems to be what I was looking for. Also, I no longer have the desire to create that `npm` package after playing with this [tool](http://r12a.github.io/apps/subtags/). Not only did someone basically already do it, but I now see the even greater chaos involved.
 
 Additional Resources:  
-* [Simplified Locale Codes (Sbarnea)](https://sbarnea.com/articles/simplified-locale-codes/)
-* [Accept-lang Locales (W3)](https://www.w3.org/International/questions/qa-accept-lang-locales)
-* [Language Tags (W3)](https://www.w3.org/International/articles/language-tags/)
-* [R12](http://r12a.github.io/)
-* [Accept-lang Header (W3)](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4)
+- [Simplified Locale Codes (Sbarnea)](https://sbarnea.com/articles/simplified-locale-codes/)
+- [Accept-lang Locales (W3)](https://www.w3.org/International/questions/qa-accept-lang-locales)
+- [Language Tags (W3)](https://www.w3.org/International/articles/language-tags/)
+- [R12](http://r12a.github.io/)
+- [Accept-lang Header (W3)](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4)
