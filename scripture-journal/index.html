@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>scripture-journal</title>
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+<div id="aside" class="pure-menu pure-menu-scrollable custom-restricted">
+  <h2 id="entries-heading">Entries</h2>
+  <div id="entries-list"></div>
+
+</div>
+
+<div id="main-column">
+  <h1 id="greeting"></h1>
+
+  <form id="schedule_form" action="#" method="POST" enctype="multipart/form-data" class="pure-form pure-form-aligned">
+    <label for="user-email">Email</label>
+        <input id="user-email" type="email" onChange="checkEmail(this);" placeholder="Email">
+    <span id="user-email-confirm" class="hidden"></span>
+      
+    <h2 id="past-thoughts-title" title="Study Journal: In 100 words or more, write about something you learned from doing the reading assignment OR something that really struck you from class.  Remember that the reading you are reporting on is from the PREVIOUS class.  You may share insights you gained, questions you have, stories about principles you have studied. ">
+      Past Thoughts</h2>
+    <textarea name="thoughts" id="past-thoughts-text" class="" onKeyUp="countWords(this.id, 100)" class="thoughts" name="message" rows="7" cols="30"></textarea>
+    <p id="past-thoughts-text-counter"></p>
+  
+    <h2>Ponder Question</h2>
+    <textarea name="ponder" id="ponder-question-text" onKeyUp="countWords(this.id, 50)" class="thoughts" name="message" rows="7" cols="30"></textarea>
+    <p id="ponder-question-text-counter"></p>
+  
+    <h2>Question</h2>
+    <textarea name="question" id="question-text" class="thoughts" name="message" rows="7" cols="30"></textarea>
+      <p id="question-text-counter"></p>
+      
+    <h2>Promptings</h2>
+    <textarea name="promptings" id="promptings-text" class="thoughts" name="message" rows="7" cols="30"></textarea>
+      <p id="promptings-text-counter"></p>
+      
+    <h2>Sharing</h2>
+    <textarea name="share" id="share-text" class="thoughts" name="message" rows="7" cols="30"></textarea>
+      <p id="share-text-counter"></p>
+      
+    <input id="submit-button" onclick="saveJournal();event.preventDefault();" type="button" value="Save in Journal" class="pure-button pure-button-disabled">
+  </form>
+</div>
+  
+  <script src="main.js"></script> 
+</body>
+</html>
