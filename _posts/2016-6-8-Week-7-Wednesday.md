@@ -24,3 +24,6 @@ Something like this will appear:
 # Note that empty commits are commented out```  
 
 Change `pick` to `squash` for the commits you want squashed.
+
+
+There was a presentation about [Service Worker](https://youtu.be/cmGr0RszHc8) and it rocked.
