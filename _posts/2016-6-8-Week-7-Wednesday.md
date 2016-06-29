@@ -6,7 +6,8 @@ Here is how to ['squash'](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-His
 `git rebase -i HEAD~3`  
 
 Something like this will appear:  
-```#  
+```bash
+#  
 # Commands:  
 #  p, pick = use commit  
 #  r, reword = use commit, but edit the commit message  
