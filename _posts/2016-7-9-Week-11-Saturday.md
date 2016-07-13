@@ -16,5 +16,5 @@ Looking at that chart, it perfectly describes my emacs experience - I'm constant
 I think I will like Vim.
  - On every computer I use by default (even the chronos shell of my Chromebook)
  - Lightweight
- - Cool plugins like debugers and compilers
+ - Cool plugins like debuggers and compilers
  - IDEs have Vim mode
