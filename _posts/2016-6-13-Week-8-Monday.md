@@ -2,7 +2,7 @@
 layout: post
 title: Week 8 - Monday
 ---
-
+An example of fetch (the new Ajax):
 ```javascript
 var array = [
   {value: "ya"},
