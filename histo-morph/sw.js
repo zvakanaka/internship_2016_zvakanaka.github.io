@@ -2,16 +2,16 @@ this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/components/bootstrap/dist/js/bootstrap.min.js',
-        '/components/jquery/dist/jquery.min.js',
-        '/components/bootstrap/dist/css/bootstrap.min.css',
-        '/index.html',
-        '/app.js',
-        '/index.js',
-        '/main.js',
-        '/img/milkyway.jpg',
-        '/lib/hueConvert.js'
+        '.',
+        'components/bootstrap/dist/js/bootstrap.min.js',
+        'components/jquery/dist/jquery.min.js',
+        'components/bootstrap/dist/css/bootstrap.min.css',
+        'index.html',
+        'app.js',
+        'index.js',
+        'main.js',
+        'img/milkyway.jpg',
+        'lib/hueConvert.js'
       ]);
     })
   );
@@ -28,6 +28,6 @@ this.addEventListener('fetch', function(event) {
     });
     return response.clone();
   }).catch(function() {
-    return caches.match('/img/milkyway.jpg');
+    return caches.match('img/milkyway.jpg');
   }));
 });
