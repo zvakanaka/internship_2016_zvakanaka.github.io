@@ -25,17 +25,17 @@
       }
       if (window && window.process && window.process.type) {
         window.$ = window.jQuery = require('./components/jquery/dist/jquery.min.js');
-        require("./components/bootstrap/dist/js/bootstrap.min.js");
+        require("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js");
       } else {
-        require("components/jquery/dist/jquery.min.js", function() {
+        require("http://code.jquery.com/jquery-2.2.4.min.js", function() {
           console.log('Loaded jquery');
-          require("components/bootstrap/dist/js/bootstrap.min.js", function() {
+          require("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", function() {
             console.log('Loaded bootstrap');
           })
         });
       }
     </script>
-    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
     <div class="container-fluid">
