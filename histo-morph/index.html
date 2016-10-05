@@ -27,7 +27,7 @@
         window.$ = window.jQuery = require('./components/jquery/dist/jquery.min.js');
         require("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js");
       } else {
-        require("http://code.jquery.com/jquery-2.2.4.min.js", function() {
+        require("https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js", function() {
           console.log('Loaded jquery');
           require("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", function() {
             console.log('Loaded bootstrap');
