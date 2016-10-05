@@ -3,9 +3,9 @@ this.addEventListener('install', function(event) {
     caches.open('v1').then(function(cache) {
       return cache.addAll([
         '.',
-        'components/bootstrap/dist/js/bootstrap.min.js',
-        'components/jquery/dist/jquery.min.js',
-        'components/bootstrap/dist/css/bootstrap.min.css',
+        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
+        'http://code.jquery.com/jquery-2.2.4.min.js',
+        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
         'index.html',
         'app.js',
         'index.js',
