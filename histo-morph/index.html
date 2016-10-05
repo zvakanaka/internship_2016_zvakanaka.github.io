@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Histomorph</title>
+    <!-- bootstrap -->
+    <script>
+      if (window && window.process && window.process.type) {
+        console.log('Electron detected');
+      } else {
+        // source: http://stackoverflow.com/a/950146/4151489
+        function require(url, callback)
+        {
+          var head = document.getElementsByTagName('head')[0];
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+
+          script.onreadystatechange = callback;
+          script.onload = callback
+
+          // Fire the loading
+          head.appendChild(script);
+        }
+      }
+      if (window && window.process && window.process.type) {
+        window.$ = window.jQuery = require('./components/jquery/dist/jquery.min.js');
+        require("./components/bootstrap/dist/js/bootstrap.min.js");
+      } else {
+        require("components/jquery/dist/jquery.min.js", function() {
+          console.log('Loaded jquery');
+          require("components/bootstrap/dist/js/bootstrap.min.js", function() {
+            console.log('Loaded bootstrap');
+          })
+        });
+      }
+    </script>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <img id="img-to-morph" width="100%" src="img/milkyway.jpg" />
+
+      <label>Brightness</label>
+      <input id="slider-brightness" type ="range" min ="0" max="500" step ="5" value ="100"/>
+      <label>Hue</label>
+      <input id="slider-hue" type ="range" min ="0" max="360" step ="5" value ="0"/>
+      <label>Saturation</label>
+      <input id="slider-saturation" type ="range" min ="0" max="1000" step ="5" value ="100"/>
+
+      <button data-toggle="collapse" data-target="#extra-controls" class="btn btn-default">More/Less Controls</button>
+      <div id="extra-controls" class="collapse">
+        <label>Blur</label>
+        <input id="slider-blur" type ="range" min ="0" max="30" step ="1" value ="0"/>
+        <label>Grayscale</label>
+        <input id="slider-grayscale" type ="range" min ="0" max="100" step ="5" value ="0"/>
+        <label>Invert</label>
+        <input id="slider-invert" type ="range" min ="0" max="100" step ="5" value ="0"/>
+        <label>Opacity</label>
+        <input id="slider-opacity" type ="range" min ="0" max="100" step ="5" value ="100"/>
+        <label>Sepia</label>
+        <input id="slider-sepia" type ="range" min ="0" max="100" step ="5" value ="0"/>
+      </div>
+
+      <button id="button-reset-filters" class="btn btn-default">Reset Filters</button>
+      <button id="button-copy-css" class="btn btn-default">Copy CSS</button>
+
+      <div class="btn-group" role="group">
+        <input id="button-open" type="button" class="btn btn-default" value="Open" />
+        <input id="button-save" type="button" class="btn btn-default" value="Save" />
+        <input id="button-save-as" type="button"class="btn btn-default"  value="Save As" />
+      </div>
+      <script>
+        require('./index.js')
+      </script>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
