@@ -2,5 +2,5 @@
 node_modules
 bower_components
 #components
-dist/
+/dist
 .env
