@@ -31,22 +31,35 @@
           console.log('Loaded jquery');
           require("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", function() {
             console.log('Loaded bootstrap');
+            require("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js", function() {
+              console.log('Loaded sliders');
+              require("./index.js", function() {
+                console.log('Loaded index');
+              })
+            })
           })
         });
       }
     </script>
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.min.css">
   </head>
   <body>
     <div class="container-fluid">
       <img id="img-to-morph" width="100%" src="img/milkyway.jpg" />
 
       <label>Brightness</label>
-      <input id="slider-brightness" type ="range" min ="0" max="500" step ="5" value ="100"/>
+      <input id="slider-brightness" type="text" data-slider-min="0" data-slider-max="500" data-slider-step="5" data-slider-value="100"/>
+      <br/>
+
       <label>Hue</label>
-      <input id="slider-hue" type ="range" min ="0" max="360" step ="5" value ="0"/>
+      <input id="slider-hue" type="text" data-slider-min="0" data-slider-max="360" data-slider-step="5" data-slider-value="0"/>
+      <br/>
+
       <label>Saturation</label>
-      <input id="slider-saturation" type ="range" min ="0" max="1000" step ="5" value ="100"/>
+      <input id="slider-saturation" type ="range" data-slider-min ="0" data-slider-max="1000" data-slider-step ="5" data-slider-value ="100"/>
+      <br/>
 
       <button data-toggle="collapse" data-target="#extra-controls" class="btn btn-default">More/Less Controls</button>
       <div id="extra-controls" class="collapse">
@@ -71,7 +84,7 @@
         <input id="button-save-as" type="button"class="btn btn-default"  value="Save As" />
       </div>
       <script>
-        require('./index.js')
+        // require('./index.js')
       </script>
       <script src="app.js"></script>
     </div>

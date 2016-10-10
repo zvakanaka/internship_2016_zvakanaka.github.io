@@ -75,12 +75,16 @@ function onRangeChange(r,f) {
 
 //setup for sliders to update filter array
 filterNames.forEach(function(filterName) {
-  let filterSlider = document.getElementById('slider-'+filterName)
-  onRangeChange(filterSlider, function() {
-    let filterVal = filterSlider.value
-    filters[`${filterName}`] = Number(filterVal)
-    setFilters()
-    console.log(`${filterName}(${filterVal})`);
+  let slider = new Slider('#slider-'+filterName, {
+    formatter: function(value) {
+      return 'Current value: ' + value;
+    }
+  });
+  slider.on('slide', function() {
+      let value = slider.getValue();
+      filters[`${filterName}`] = Number(value)
+      setFilters()
+      console.log(`${filterName}(${value})`);
   });
 });
 //*** end slider listeners ***

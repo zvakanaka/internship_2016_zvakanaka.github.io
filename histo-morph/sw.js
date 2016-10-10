@@ -6,10 +6,13 @@ this.addEventListener('install', function(event) {
         'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
         'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js',
         'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+        'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.min.css',
         'index.html',
         'app.js',
         'index.js',
         'main.js',
+        'main.css',
         'img/milkyway.jpg',
         'lib/hueConvert.js'
       ]);
