@@ -73,6 +73,14 @@ function onRangeChange(r,f) {
   r.addEventListener("change",function(e){if(!n)f(e);});
 }
 
+function updateSlider(slider, filterName) {
+    let value = slider.getValue();
+
+    filters[`${filterName}`] = Number(value)
+    setFilters()
+    console.log(`${filterName}(${value})`);
+};
+
 //setup for sliders to update filter array
 filterNames.forEach(function(filterName) {
   let slider = new Slider('#slider-'+filterName, {
@@ -80,11 +88,11 @@ filterNames.forEach(function(filterName) {
       return 'Current value: ' + value;
     }
   });
-  slider.on('slide', function() {
-      let value = slider.getValue();
-      filters[`${filterName}`] = Number(value)
-      setFilters()
-      console.log(`${filterName}(${value})`);
+  slider.on('slide', function(){
+    updateSlider(slider, filterName);
+  });
+  slider.on('change', function(){
+    updateSlider(slider, filterName);
   });
 });
 //*** end slider listeners ***
