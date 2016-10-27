@@ -3,7 +3,7 @@
   "short_name": "Histomorph",
   "icons": [
     {
-      "src": "img/launcher.png",
+      "src": "/histo-morph/img/launcher.png",
       "sizes": "36x36",
       "type": "image/png",
       "density": 0.75
